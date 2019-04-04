@@ -1,0 +1,54 @@
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+img {
+    width: 120px;
+    height: 75px;
+    display: block;
+    float: left;
+    padding: 5px;
+    margin: 2px; 
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+div.char {
+    margin: 5px;
+    border: 2px solid rgb(241, 79, 4);
+    float: left;
+    width: 150px;
+    background-color: antiquewhite;
+}
+
+div.health {
+    margin: 5px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+.column1 {
+    float: left;
+    width: 100%;
+  }
+
+.column2 {
+    float: left;
+    width: 50%;
+  }
+  
+  
