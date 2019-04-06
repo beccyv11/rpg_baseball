@@ -93,5 +93,15 @@ $("#hit").on("click", function(){
 })
 
 
+// Update Batting Average: this function will call on the change in score board in order to 
+// update acurately based on random selection of hit action 
 
+// Update ERA :this function will call on the change in score board in order to 
+// update acurately based on random selection of hit action 
+
+//Update Outs : this will be based on the number of strikes 
+
+//Update Runs: if three hits add 1 run
+
+//Update who wins: if 3 strikes pitcher wins if 3 runs batter wins
 
