@@ -6,6 +6,12 @@
     clear: both;
   }
 
+.reset {
+   color: antiquewhite;
+    background-color: orange;
+    border: solid 1px black;
+}
+
 img {
     width: 120px;
     height: 75px;
@@ -43,12 +49,56 @@ h1{
 
 .column1 {
     float: left;
-    width: 100%;
+    width: 50%;
   }
 
 .column2 {
     float: left;
     width: 50%;
   }
-  
+
+  #playfieldB {
+    width: 50%;
+    height: 200px;
+    border: 2px solid white;
+    float:left;
+    margin: 20px;
+    background-color: antiquewhite;
+    float: left;
+  }
+  #playfieldP {
+    width: 50%;
+    height: 200px;
+    border: 2px solid white;
+    float:left;
+    margin: 20px;
+    background-color: antiquewhite;
+    float: left;
+  }
+ 
+  #hit {
+    margin: 75px;
+    color: antiquewhite;
+    background-color: orange;
+    border: solid 1px black;
+    float: right;
+    height: 50px;
+    width: 100px;
+  }
+
+  h3 {
+      float: right;
+      margin: 15px;
+      font-size: 12px;
+      text-align: center;
+      padding-right: 20px;
+  }
+
+  table {
+      float: right;
+      margin: 20px;
+      padding-right: 10px;
+      border: solid 1px orange;
+  }
+
   

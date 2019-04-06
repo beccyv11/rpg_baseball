@@ -10,10 +10,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!--Link to javaScript-->
-    <script src="assets/javascript/game.js"></script>
+    <!-- <script src="assets/javascript/game.js"></script> -->
 
     <title>Baseball RPG Game</title>
     <h1>Baseball RPG Game</h1>
+    <button value="Refresh Page" onClick="window.location.reload()" class="reset">Play Again</button>
 </head>
 
 <body background="assets/images/background.jpg">
@@ -22,42 +23,79 @@
                 <h2 id="yourHitter">
                         Select A Batter 
                 </h2>
-                <div class="char B"> 
-                    <div class="health">.358</div>
-                    <a target = "_blank" href="barry.jpg">
-                            <img src="assets/images/barry.jpg"> 
-                    </a>
-                    <div class="desc">Barry Bonds</div>
-                </div>
-                <div class="char A">
-                        <div class="health">.389</div>
-                        <a target = "_blank" href="barry.jpg">
-                                <img src="assets/images/arod.jpg"> 
-                        </a>
-                        <div class="desc">AROD</div>
-                </div>
-                <div class="char H">
-                        <div class="health">.365</div> 
-                        <a target = "_blank" href="barry.jpg">
-                                <img src="assets/images/hank.jpg">
-                        </a>
-                        <div class="desc">Hank Aaron</div>
-                </div>
+            <div class="choices">
+            <button class="char-b" onclick="moveButton(this)" type="button">
+               
+            </button>
+            <button class ="char-a" onclick="moveButton(this)" type="button">
+                
+            </button>
+            <button class="char-h" onclick="moveButton(this)" type="button">
+                
+            </button>
             </div>
-            <div class="column1"></div>
-            <div class="column1"></div>
+            </div>
+            <div class="column1">
+                    <h2 id="yourPitcher">
+                            Select A Pitcher
+                    </h2>
+                <div class="opponent">
+                <button class="char-t" onclick="move(this)" type="button">
+                   
+                </button>
+                <button class ="char-m" onclick="move(this)" type="button">
+                            
+                </button>
+                <button class="char-v" onclick="move(this)" type="button">
+                            
+                </button>
+                </div>
+                    
+            </div>
     </div>
     <div id="row2">
         <div class="column2">
-                <h2 id="yourPitcher">
-                        Select A Pitcher
-                </h2>
+
+                <h2>The Match Up</h2>
+                
         </div>
-        <div class="column2"></div>
-        <div class="column2"></div>
+    </div>
+    <div id="row3">
+
+        <div class="column3">
+                <div id="playfieldB">
+                    <button id="hit">Hit</button>
+                </div>
+        </div>
+        <div class="column3">
+               
+                <div id="playfieldP">
+                    <table id=score>
+                        <tr>
+                            <th>Hits</th>
+                            <th>Runs</th>
+                            <th>Strikes</th>
+                            <th>Balls</th>
+                            <th>Outs</th>
+                        </tr>
+                        <tr>
+                            <td id="hits"></td>
+                            <td id="runs"></td>
+                            <td id="strikes"></td>
+                            <td id="balls"></td>
+                            <td id="outs"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+        </div>
+      
     </div>
 
-   
+    <!--Link to Jquery Library-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Link to javaScript-->
+    <script src="assets/javascript/game.js"></script>
 
 
 </body>
